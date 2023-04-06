@@ -10,12 +10,12 @@ class TStack {
     int top;
     
      public:
-    TStack () :top(-1) {}
+    TStack() :top(-1) {}
     void push(T value) {
       if (isFull()) {
         throw std::string("Stack is full");
       } else {
-        arr[ ++top] = value;
+        arr[++top] = value;
       }
     }
     const T& pop() {
@@ -25,13 +25,13 @@ class TStack {
         return arr[top--];
       }
     }
-    bool isEmpty ()const {
+    bool isEmpty()const {
       return top == -1;
     }
-    bool isFull ()const {
+    bool isFull()const {
       return top == size - 1;
     }
-    const T& get ()const {
+    const T& get()const {
           return arr[top];
     }
 };
