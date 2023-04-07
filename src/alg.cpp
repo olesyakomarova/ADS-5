@@ -82,6 +82,7 @@ std::string infx2pstfx(std::string inf) {
   return work;
 }
 
+
 int count(const int& a, const int& b, const int& oper) {
   switch (oper) {
     default:
@@ -93,6 +94,7 @@ int count(const int& a, const int& b, const int& oper) {
   }
   return 0;
 }
+
 int eval(std::string pref) {
   TStack<int, 100> stack1;
   std::string num = "";
