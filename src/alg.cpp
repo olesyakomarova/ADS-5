@@ -93,7 +93,6 @@ int count(const int& a, const int& b, const int& oper) {
   }
   return 0;
 }
-
 int eval(std::string pref) {
   TStack<int, 100> stack1;
   std::string num = "";
